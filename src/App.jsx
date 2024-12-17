@@ -5,6 +5,8 @@ import './App.css'
 import Navbar from './components/Navbar'
 import BannerCarousel from './components/BannerCarousel'
 import FeaturedCarousel from './components/FeaturedCarousel'
+import GardenCategories from './components/GardenCategories'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +15,9 @@ function App() {
     <>
       <Navbar />
       <BannerCarousel />
-      <FeaturedCarousel/>
+      <GardenCategories/>
+      <FeaturedCarousel />
+      <Footer/>
     </>
   )
 }

@@ -8,6 +8,8 @@ import { Box, Typography, Button, Card, CardMedia, CardContent } from "@mui/mate
 import featured1 from '../assets/featured1.jpeg';
 import featured2 from '../assets/featured2.jpeg';
 import featured3 from '../assets/featured3.jpeg';
+import featured4 from '../assets/featured4.jpeg';
+import featured5 from '../assets/featured5.jpeg';
 
 // Dummy featured items
 const featuredItems = [
@@ -32,14 +34,20 @@ const featuredItems = [
   {
     id: 4,
     name: "Smartphone",
-    image: featured3,
+    image: featured4,
+    price: "$599.99",
+  },
+  {
+    id: 5,
+    name: "White Lotus",
+    image: featured5,
     price: "$599.99",
   },
 ];
 
 const FeaturedCarousel = () => {
   return (
-    <Box sx={{ width: "100%", padding: "20px", backgroundColor: "#f9f9f9" }}>
+    <Box sx={{ width: "100%", padding: "20px", backgroundColor: "#C9EDDC" }}>
       <Typography
         variant="h4"
         sx={{
@@ -56,12 +64,12 @@ const FeaturedCarousel = () => {
         pagination={{ clickable: true }}
         navigation
         loop
-        spaceBetween={20}
-        slidesPerView={3}
+        spaceBetween={10}
+        slidesPerView={4}
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
+          1024: { slidesPerView: 4 },
         }}
         style={{ padding: "20px" }}
       >

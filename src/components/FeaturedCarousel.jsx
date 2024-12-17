@@ -15,31 +15,31 @@ import featured5 from '../assets/featured5.jpeg';
 const featuredItems = [
   {
     id: 1,
-    name: "Wireless Headphones",
+    name: "White Lotus",
     image: featured1,
     price: "$99.99",
   },
   {
     id: 2,
-    name: "Smart Watch",
+    name: "Orange Water lily",
     image: featured3,
     price: "$199.99",
   },
   {
     id: 3,
-    name: "Gaming Mouse",
+    name: "Hybrid white lotus",
     image: featured2,
     price: "$49.99",
   },
   {
     id: 4,
-    name: "Smartphone",
+    name: "Kerala Lotus",
     image: featured4,
     price: "$599.99",
   },
   {
     id: 5,
-    name: "White Lotus",
+    name: "Pink Lotus",
     image: featured5,
     price: "$599.99",
   },
@@ -67,6 +67,7 @@ const FeaturedCarousel = () => {
         spaceBetween={10}
         slidesPerView={4}
         breakpoints={{
+          375:{slidesPerView: 1},
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 4 },

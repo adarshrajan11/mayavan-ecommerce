@@ -7,8 +7,7 @@ import category4 from "../assets/herbs.jpg";
 import featured1 from '../assets/featured1.jpeg';
 import featured2 from '../assets/featured2.jpeg';
 import featured3 from '../assets/featured3.jpeg';
-import featured4 from '../assets/featured4.jpeg';
-import featured5 from '../assets/featured5.jpeg';
+
 
 
 // Dummy data for categories and items
@@ -116,7 +115,7 @@ const GardenCategories = () => {
       {selectedCategory && (
         <Box sx={{ marginTop: "40px" }}>
           <Typography
-            variant="h5"
+            variant="h4"
             sx={{
               textAlign: "center",
               marginBottom: "20px",

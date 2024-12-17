@@ -5,6 +5,8 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import logo from '../assets/Mayavan.jpg'
+import { Height } from "@mui/icons-material";
 
 const Footer = () => {
   const containerVariant = {
@@ -32,7 +34,10 @@ const Footer = () => {
       {/* Footer Content */}
       <Grid container spacing={4} justifyContent="center">
         {/* About Section */}
-        <Grid item xs={12} sm={4}>
+              <Grid item xs={12} sm={4}>
+                  <Box sx={{display:"flex",alignItems:"center"}}>
+                    <img src={logo} alt="logo" style={{ height: '60px', marginRight: '10px',marginBottom:'10px' }} />
+                  </Box>
           <Typography
             variant="h6"
             component={motion.div}

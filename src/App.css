@@ -38,3 +38,18 @@
 .swiper-pagination {
   bottom: 10px !important;
 }
+
+/* masonary */
+.masonry-grid {
+  display: flex;
+  margin-left: 25px;
+  margin-top: 80px;
+  /* Adjust for column spacing */
+  width: auto;
+}
+
+.masonry-grid_column {
+  padding-left: 35px;
+
+  background-clip: padding-box;
+}
